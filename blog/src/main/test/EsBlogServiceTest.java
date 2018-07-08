@@ -1,4 +1,4 @@
-import blog.elasticsearch.service.EsBlogService;
+import blog.service.es.EsBlogService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -13,6 +13,6 @@ public class EsBlogServiceTest {
     private EsBlogService esBlogService;
     @Test
     public void testfind(){
-//        esBlogService.find();
+        esBlogService.find();
     }
 }

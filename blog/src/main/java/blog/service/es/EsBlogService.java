@@ -1,15 +1,14 @@
-package blog.elasticsearch.service;
+package blog.service.es;
 
-import blog.elasticsearch.entity.EsBlog;
-import blog.elasticsearch.repository.EsBlogRepository;
+import blog.entity.es.EsBlog;
+import blog.repository.es.EsBlogRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 
-import javax.annotation.Resource;
-
 public class EsBlogService {
-    /*@Resource
+    @Autowired(required=true)
     private EsBlogRepository esBlogRepository;
     public void find(){
         initEsBlogRepository();
@@ -17,7 +16,7 @@ public class EsBlogService {
         String title = "1";
         String summary = "2";
         String content = "3";
-        Page<EsBlog> page = esBlogRepository.findDistincEsBlogByTitleContainOrSummaryContainOrContentContain(title,summary,content,pageable);
+        Page<EsBlog> page = esBlogRepository.findDistincEsBlogByTitleContainingOrSummaryContainingOrContentContaining(title,summary,content,pageable);
         if(page.getSize()>0){
             for(EsBlog esBlog : page.getContent()){
                 System.out.println(esBlog.toString());
@@ -30,5 +29,5 @@ public class EsBlogService {
         esBlogRepository.save(new EsBlog("1","2","3"));
         esBlogRepository.save(new EsBlog("4","5","6"));
         esBlogRepository.save(new EsBlog("7","8","9"));
-    }*/
+    }
 }
