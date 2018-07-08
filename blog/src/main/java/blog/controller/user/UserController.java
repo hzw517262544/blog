@@ -12,9 +12,9 @@ public class UserController {
     public ModelAndView list(Model model){
         model.addAttribute("userList","");
         model.addAttribute("title","用户管理");
-        return new ModelAndView("user/list.html","userModel",model);
+        return new ModelAndView("user/list","userModel",model);
     }
-    @GetMapping("{id}")
+    @GetMapping("/view{id}")
     public ModelAndView view(@PathVariable("id")Long id, Model model){
         model.addAttribute("user","");
         model.addAttribute("title","查看用户");
