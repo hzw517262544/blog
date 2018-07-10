@@ -1,4 +1,4 @@
-package blog.elasticsearch.entity;
+package blog.entity.es;
 
 import org.springframework.data.elasticsearch.annotations.Document;
 
