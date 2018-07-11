@@ -1,4 +1,4 @@
-package com.hao.spring.boot.blog.repository.es;
+package com.hao.blog.repository.es;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -8,8 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.hao.spring.boot.blog.Application;
-import com.hao.spring.boot.blog.repository.BlogRepository;
+import com.hao.Application;
+import com.hao.blog.repository.BlogRepository;
 
 /**
  * BlogRepository 测试类.

@@ -1,4 +1,4 @@
-package com.hao.spring.boot.blog;
+package com.hao.blog;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
