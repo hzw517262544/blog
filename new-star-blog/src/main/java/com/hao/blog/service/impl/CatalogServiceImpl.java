@@ -1,7 +1,8 @@
-package com.hao.blog.service;
+package com.hao.blog.service.impl;
 
 import java.util.List;
 
+import com.hao.blog.service.CatalogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +17,7 @@ import com.hao.blog.repository.CatalogRepository;
  * @author <a href="https://waylau.com">Way Lau</a>
  */
 @Service
-public class CatalogServiceImpl implements CatalogService{
+public class CatalogServiceImpl implements CatalogService {
 
 	@Autowired
 	private CatalogRepository catalogRepository;

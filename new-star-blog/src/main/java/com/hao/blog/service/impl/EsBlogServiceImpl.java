@@ -1,4 +1,4 @@
-package com.hao.blog.service;
+package com.hao.blog.service.impl;
 
 import static org.elasticsearch.index.query.QueryBuilders.matchAllQuery;
 import static org.elasticsearch.search.aggregations.AggregationBuilders.terms;
@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import com.hao.blog.service.EsBlogService;
+import com.hao.blog.service.UserService;
 import com.hao.blog.vo.TagVO;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.action.search.SearchType;

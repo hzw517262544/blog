@@ -1,7 +1,9 @@
-package com.hao.blog.service;
+package com.hao.blog.service.impl;
 
 import javax.transaction.Transactional;
 
+import com.hao.blog.service.BlogService;
+import com.hao.blog.service.EsBlogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

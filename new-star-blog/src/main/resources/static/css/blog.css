@@ -5,6 +5,11 @@
  * @author Way Lau <https://waylau.com>
  */
 /* Footer */
+body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 {
+    font-family: Microsoft YaHei,'宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+
+
 .blog-footer {
     bottom: 0;
     width: 100%;
@@ -14,7 +19,8 @@
 
 /* Index content*/
 .blog-content-container {
-    margin-top: 2.0em;
+    margin: 0px;
+
     background-color: #fff;
 }
 

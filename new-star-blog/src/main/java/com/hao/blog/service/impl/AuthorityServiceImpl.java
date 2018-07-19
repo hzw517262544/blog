@@ -1,8 +1,9 @@
 /**
  * 
  */
-package com.hao.blog.service;
+package com.hao.blog.service.impl;
 
+import com.hao.blog.service.AuthorityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

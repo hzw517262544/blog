@@ -1,7 +1,8 @@
-package com.hao.blog.service;
+package com.hao.blog.service.impl;
 
 import javax.transaction.Transactional;
 
+import com.hao.blog.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,10 +1,11 @@
-package com.hao.blog.service;
+package com.hao.blog.service.impl;
 
 import java.util.Collection;
 import java.util.List;
 
 import javax.transaction.Transactional;
 
+import com.hao.blog.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

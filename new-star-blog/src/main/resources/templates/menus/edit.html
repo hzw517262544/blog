@@ -1,0 +1,31 @@
+<div class="container">
+
+	<form th:action="@{/sysMenu}" method="post" th:object="${menuModel.menu}" id="menuForm">
+		<input type="hidden" name="id" th:value="*{id}">
+
+		<div class="form-group ">
+			<label for="parentMenu" class="col-form-label">上级菜单</label>
+			<input type="text" class="form-control" id="parentMenu" name="parentId"  th:value="*{parentId}" maxlength="50" placeholder="请选上级菜单">
+
+		</div>
+		<div class="form-group ">
+			<label for="menuName" class="col-form-label">菜单名称</label>
+			<input type="text" class="form-control" id="menuName" name="name"  th:value="*{name}" maxlength="50" placeholder="请输入菜单名称">
+
+		</div>
+		<div class="form-group">
+			<label for="url" class="col-form-label">url</label>
+			<input type="text" class="form-control" id="url" name="url" th:value="*{url}" maxlength="100" placeholder="请输url">
+		</div>
+		<div class="form-group">
+			<label for="type" class="col-form-label">类型</label>
+			<select id="type" name="type" class="form-control form-control-chosen" data-placeholder="请选择类型">
+				<option value="1" data-th-selected="${#strings.contains(menuModel.menu.type,'1')}">菜单</option>
+				<option value="2" data-th-selected="${#strings.contains(menuModel.menu.type,'2')}">按钮</option>
+			</select>
+		</div>
+	</form>
+
+</div>
+<!-- /.container -->
+ 
